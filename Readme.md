@@ -4,9 +4,9 @@ This application solves the common hurdle of missing EXIF photo information when
 This can be really irritating when importing photos into a service like google photos, where the date used is incorrect.
 
 My program will:
-- trawl through the generated htm files from the export archive,
+- trawl through the generated htm files from the export archive
 - retrieve EXIF information
-- apply this EXIF data to the exported photos.
+- apply this EXIF data to the exported photos
 
 This application requires a facebook export, which is detailed here:
 https://www.facebook.com/help/131112897028467
@@ -18,7 +18,7 @@ Current features:
 
 Usage:
 
-run on the command line: 
-scala ImageProcessor.scala -Dfile.dir.input=facebookexportdirectory -Dfile.dir.output=outputdirectory
+run on the command line (sbt):
+env JAVA_OPTS="-Dfile.dir.input=facebookexportdirectory -Dfile.dir.output=outputdirectory" sbt run
 
 Contact: johnreganprojects@gmail.com
